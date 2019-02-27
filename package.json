@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/TautvydasRudis/API-FE1902-TR/issues"
   },
-  "homepage": "https://github.com/TautvydasRudis/API-FE1902-TR#readme"
+  "homepage": "https://github.com/TautvydasRudis/API-FE1902-TR#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-assemble": "^0.6.3",
+    "grunt-contrib-compass": "^1.1.1"
+  },
+  "dependencies": {
+    "handlebars": "^4.1.0"
+  }
 }
