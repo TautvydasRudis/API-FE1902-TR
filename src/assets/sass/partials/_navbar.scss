@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     z-index: 999;
+    width: 100%;
     .nav-bar{
         height: $nav-height;
         background: $default-bg;
@@ -13,20 +14,27 @@
             width: $nav-left-width;
         }
         &--right{
-            margin-left: $nav-left-width;
-            min-height: $nav-height;
+            // margin-left: $nav-left-width;
+            // min-height: $nav-height;
+            display: flex;
+            justify-content: space-between;
         }
         &__lists{
             list-style: none;
+            display: flex;
             &--left{
-
+              // float:left;
             }
             &--right{
-                float: right;
+                // float: right;
             }
             &__link{
 
             }
         }
+    }
+    .svg-icon{
+      height: 50%;
+      fill: white;
     }
 }
