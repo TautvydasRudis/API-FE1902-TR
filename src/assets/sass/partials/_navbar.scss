@@ -16,11 +16,18 @@
         &--right{
             // margin-left: $nav-left-width;
             // min-height: $nav-height;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
         }
         &__lists{
             list-style: none;
+            line-height: $nav-height;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             &--left{
               // float:left;
@@ -29,7 +36,7 @@
                 // float: right;
             }
             &__link{
-
+              padding: 0 20px;
             }
         }
     }
