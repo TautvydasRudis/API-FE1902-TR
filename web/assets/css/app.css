@@ -9628,6 +9628,65 @@ a.text-dark:hover, a.text-dark:focus {
   width: 24px;
 }
 
+.selection-container {
+  margin-top: 100px;
+  margin-left: 255px;
+}
+
+.boxes {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background: #fff;
+  padding: 15px;
+  text-align: right;
+}
+
+.v-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  background: #ebebeb;
+}
+
+u {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 4px solid green;
+  padding: 15px;
+}
+
+.svg-icon {
+  height: 24px;
+  width: 24px;
+}
+
 .topbar {
   position: fixed;
   top: 0;
@@ -9637,7 +9696,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .topbar .nav-bar {
   height: 80px;
-  background: #333;
+  background: #3C5A99;
   color: #fff;
 }
 .topbar .nav-bar--left {
@@ -9687,6 +9746,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 12px 20px;
 }
 .side-menu__lists__list a {
+  color: unset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -2,13 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
     <title></title>
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
-    {{>sidenav}}
     {{>navbar}}
+    {{>sidenav}}
+
+    <div class="selection-container">
+      {{>body}}
+    </div>
+
+
     {{>footer}}
+
 
     <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div>
   </body>
