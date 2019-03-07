@@ -21,11 +21,17 @@
             -ms-flex-align: center;
                 align-items: center;
         svg{
+          fill:$light-grey;
 
         }
 
         &:after{
-          @include arrow();
+          @include arrow($rotate: 90deg);
+        }
+        &active{
+          a{
+            color: red;
+          }
         }
       }
       &__title{

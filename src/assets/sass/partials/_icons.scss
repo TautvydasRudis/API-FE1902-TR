@@ -4,18 +4,15 @@
 
 }
 
-@mixin arrow($color: #000) {
+@mixin arrow($color: $light-grey, $rotate: -45deg) {
   content: "";
   position: absolute;
   right: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-
   border: solid $color;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate($rotate), translateY(-50%) ;
+          transform: rotate($rotate), translateY(-50%) ;
 }

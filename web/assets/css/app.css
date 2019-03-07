@@ -9639,7 +9639,25 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 3px;
   background: #fff;
   padding: 15px;
+  margin-bottom: 15px;
+}
+.boxes__title {
+  text-align: left;
+}
+.boxes--right {
   text-align: right;
+}
+.boxes__image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.boxes--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .v-align {
@@ -9675,11 +9693,39 @@ h1, h2, h3, h4, h5 {
 }
 
 .circle {
+  position: relative;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  border: 4px solid green;
-  padding: 15px;
+}
+.circle--border {
+  border: 5px solid gray;
+}
+.circle--success {
+  background: rgba(102, 187, 106, 0.75);
+  border-color: rgba(102, 187, 106, 0.35);
+}
+.circle--primary {
+  background: rgba(102, 150, 106, 0.75);
+  border-color: rgba(102, 150, 106, 0.35);
+}
+.circle--danger {
+  background: rgba(238, 110, 115, 0.75);
+  border-color: rgba(238, 110, 115, 0.35);
+}
+.circle--secondary {
+  background: rgba(156, 39, 176, 0.75);
+  border-color: rgba(156, 39, 176, 0.75);
+}
+.circle .svg-icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .svg-icon {
@@ -9754,19 +9800,23 @@ h1, h2, h3, h4, h5 {
   -ms-flex-align: center;
   align-items: center;
 }
+.side-menu__lists__list a svg {
+  fill: #000;
+}
 .side-menu__lists__list a:after {
   content: "";
   position: absolute;
   right: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
   border: solid #000;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(90deg), translateY(-50%);
+  transform: rotate(90deg), translateY(-50%);
+}
+.side-menu__lists__list aactive a {
+  color: red;
 }
 .side-menu__lists__list__title {
   padding: 12px 20px;
