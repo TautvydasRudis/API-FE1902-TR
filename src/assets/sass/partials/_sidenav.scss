@@ -9,37 +9,52 @@
   overflow: scroll;
   padding: 20px 0 80px;
   &__lists{
+    &active{
+      border-color: $default-bg;
+      background-color: $light-grey;
+      a{
+        color: red;
+        background:$light-grey;
+      }
+    }
     &__list{
       position: relative;
       padding: 12px 20px;
+      border-left: 3px solid #fff;
+      &:hover{
+        a{
+          color: $default-bg;
+          text-decoration: none;
+        }
+      }
       a{
-        color: unset;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+        color: black;
         svg{
-          fill:$light-grey;
-
-        }
-
-        &:after{
-          @include arrow($rotate: 90deg);
-        }
-        &active{
-          a{
-            color: red;
-          }
+          fill:$mid-grey;
         }
       }
+        &:after{
+          @include arrow($rotate: -45deg);
+        }
+        // &active{
+        //   border-color: $default-bg;
+        //   background-color: $light-grey;
+        //   a{
+        //     // color: red;
+        //     // background:$light-grey;
+        //   }
+        // }
       &__title{
         padding: 12px 20px;
         font-size: 12px;
       }
     }
     list-style: none;
-
   }
 }

@@ -3,14 +3,22 @@
   <head>
     <meta charset="utf-8">
 
-    <title></title>
+    <title>API</title>
+
     <link rel="stylesheet" href="assets/css/app.css">
+    {{#is default.lang 'lt'}}
+        <link rel="stylesheet" href="../assets/css/app.css">
+    {{else}}
+        <link rel="stylesheet" href="assets/css/app.css">
+    {{/is}}
+
   </head>
   <body>
     {{>navbar}}
     {{>sidenav}}
 
-    <div class="selection-container">
+    <div class="selection-container"> <!--  turi buti section-container -->
+      {{>title}}
       {{>body}}
     </div>
 
@@ -22,7 +30,13 @@
     <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div>
     <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
 
+    {{#is default.lang 'lt'}}
+      <script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+    {{else}}
+      <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
+    {{/is}}
     <script type="text/javascript">
+
     var ctx = document.getElementById('myChart1').getContext('2d');
     var chart = new Chart(ctx, {
     // The type of chart we want to create
@@ -48,14 +62,14 @@
     var ctx = document.getElementById('myChart2').getContext('2d');
     var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'pie',
+    type: 'bar',
 
     // The data for our dataset
     data: {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [{
             label: "My First dataset",
-            backgroundColor: 'rgb(255, 99, 132)'
+            backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
             data: [0, 10, 5, 2, 20, 30, 45],
         }]
@@ -78,7 +92,7 @@
         datasets: [{
             label: "My First dataset",
             backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)'
+            borderColor: 'rgb(255, 99, 132)',
             data: [0, 10, 5, 2, 20, 30, 45],
         }]
     },
@@ -87,6 +101,8 @@
     options: {}
     });
     </script>
+
+
 
 
   </body>

@@ -27,4 +27,29 @@
     display: -ms-flexbox;
     display: flex;
   }
+  &__user-info{
+    margin: 20px;
+    p:nth-child(2){
+      color: red;
+    }
+    p:first-of-type{
+      color: $mid-grey;
+    }
+
+  }
+}
+
+.user-role{
+  &--user{
+    color: $color-user;
+    font-weight: 600;
+  }
+  &--admin{
+    color: $color-admin;
+    font-weight: 600;
+  }
+  &--senpai{
+    color: $color-senpai;
+    font-weight: 600;
+  }
 }

@@ -6,7 +6,7 @@
     <title>API</title>
 
     <link rel="stylesheet" href="assets/css/app.css">
-        <link rel="stylesheet" href="assets/css/app.css">
+        <link rel="stylesheet" href="../assets/css/app.css">
 
   </head>
   <body>
@@ -66,7 +66,7 @@
     <div class="side-menu">
       <ul class="side-menu__lists">
         <li class="side-menu__lists__title">Main</li>
-        <li class="side-menu__lists__list ">
+        <li class="side-menu__lists__list  active">
           <a href="#">
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
@@ -174,6 +174,196 @@
       Welcome
       
 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-xl-3">
+            <div class="boxes boxes--right">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="circle circle--border circle--success">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#visibility"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-8 v-align">
+                        <h5>64,570</h5>
+                        <p>Lankytojai šiandien</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+            <div class="boxes boxes--right">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="circle circle--border circle--primary">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#timeline"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-8 v-align">
+                        <h5>64,570</h5>
+                        <p>Bendrai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+            <div class="boxes boxes--right">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="circle circle--border circle--danger">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#trackChanges"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-8 v-align">
+                        <h5>64,570</h5>
+                        <p>Šios dienos pardavimai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+            <div class="boxes boxes--right">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="circle circle--border circle--secondary">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#favorite"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-8 v-align">
+                        <h5>64,570</h5>
+                        <p>Konversija</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-4">
+            <div class="boxes">
+                <h6 class="boxes__title">Yearl sales report</h6>
+                <canvas id="myChart1"></canvas>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="boxes">
+                <h6 class="boxes__title">Total revenue</h6>
+                <canvas id="myChart2"></canvas>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="boxes">
+                <h6 class="boxes__title">Total revenue</h6>
+                <canvas id="myChart3"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="boxes">
+                <h6 class="boxes__title">Latest projects</h6>
+                <p class="boxes__subheading">Your awesome text goes here.</p>
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Project Name</th>
+                      <th scope="col">Start Date</th>
+                      <th scope="col">Due Date</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Assign</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Minton Admin v1</td>
+                      <td>2016-01-01</td>
+                      <td>2017-05-01</td>
+                      <td>Released</td>
+                      <td>Minton admin</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Orbit v1</td>
+                      <td>2016-01-01</td>
+                      <td>2017-05-01</td>
+                      <td>Released</td>
+                      <td>Minton admin</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Moon v1</td>
+                      <td>2016-01-01</td>
+                      <td>2017-05-01</td>
+                      <td>Released</td>
+                      <td>Minton admin</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Mars v1</td>
+                      <td>2016-01-01</td>
+                      <td>2017-05-01</td>
+                      <td>Released</td>
+                      <td>Minton admin</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Venus v1</td>
+                      <td>2016-01-01</td>
+                      <td>2017-05-01</td>
+                      <td>Released</td>
+                      <td>Minton admin</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+
+        <div class="col-xl-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="boxes boxes--flex">
+                        <img class="boxes__image img-fluid" src="../assets/images/alice.jpg" alt="user picture">
+                        <div class="boxes__user-info v-align">
+                          <h6>Alice</h6>
+                          <p>info@aliceeve.com</p>
+                          <p class="user-role user-role--admin">Admin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="boxes boxes--flex">
+                        <img class="boxes__image" src="../assets/images/obama.jpg" alt="user picture">
+                        <div class="boxes__user-info v-align">
+                          <h6>Obama</h6>
+                          <p>barack.obama@usa.gov.com</p>
+                          <p class="user-role user-role--senpai">Senpai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="boxes boxes--flex">
+                        <img class="boxes__image" src="../assets/images/man.jpg" alt="user picture">
+                        <div class="boxes__user-info v-align">
+                          <h6>John</h6>
+                          <p>john.smith@gmail.com</p>
+                          <p class="user-role user-role--user">User</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     </div>
 
 
@@ -181,7 +371,7 @@
     <div class="svg-sprite-container"><?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="crop" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 5v4h2V5h4V3H5c-1.1 0-2 .9-2 2zm2 10H3v4c0 1.1.9 2 2 2h4v-2H5v-4zm14 4h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4zm0-16h-4v2h4v4h2V5c0-1.1-.9-2-2-2z"/></symbol><symbol viewBox="0 0 24 24" id="home" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/><path d="M0 0h24v24H0z" fill="none"/></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></symbol><symbol viewBox="0 0 24 24" id="more" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></symbol><symbol viewBox="0 0 24 24" id="notifications" xmlns="http://www.w3.org/2000/svg"><path d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 0 0 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></symbol></svg></div>
     <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
 
-      <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
+      <script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>
     <script type="text/javascript">
 
     var ctx = document.getElementById('myChart1').getContext('2d');
