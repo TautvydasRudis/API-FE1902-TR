@@ -39,39 +39,87 @@
                 </li>
             </ul>
             <ul class="nav-bar__lists nav-bar__lists--right">
-                <li>
-                  <a class="nav-bar__lists__link" href="#">
-                    <svg class="svg-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use>
-                    </svg>
-                  </a>
+              <li class="nav-bar__lists__link dropdown">
+                 <a href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <svg class="svg-icon">
+                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use>
+                   </svg>
+                 </a>
+                      <div class="dropdown-menu" aria-labelledby="activities">
+                        <a class="dropdown-menu__item" href="#">
+                          <div class="circle">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop" style="fill: black"></use>
+                            </svg>
+                          </div>
+                          <div class="dropdown-menu__item__title">
+                            <h6>Robert</h6>
+                            <p data-time="">1 min</p>
+                          </div>
+                        </a>
+                        <a class="dropdown-menu__item" href="#">
+                          <div class="circle">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop" style="fill: black"></use>
+                            </svg>
+                          </div>
+                          <div class="dropdown-menu__item__title">
+                            <h6>Robert</h6>
+                            <p data-time="">1 min</p>
+                          </div>
+                        </a>
+                        <a class="dropdown-menu__item" href="#">
+                          <div class="circle">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop" style="fill: black"></use>
+                            </svg>
+                          </div>
+                          <div class="dropdown-menu__item__title">
+                            <h6>Robert</h6>
+                            <p data-time="">1 min</p>
+                          </div>
+                        </a>
+    
+                      </div>
                 </li>
-                <li>
-                  <a class="nav-bar__lists__link" href="#">
-                    <svg class="svg-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#more"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="nav-bar__lists__link" href="#">
-                    <svg class="svg-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#notifications"></use>
-                    </svg>
-                  </a>
-                </li>
+                <li class="nav-bar__lists__link dropdown">
+                   <a href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <svg class="svg-icon">
+                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#more"></use>
+                     </svg>
+                   </a>
+                        <div class="dropdown-menu" aria-labelledby="profile">
+                          <a class="dropdown-menu__item" href="#">profile1</a>
+                          <a class="dropdown-menu__item" href="#">profile2</a>
+                          <a class="dropdown-menu__item" href="#">profile3</a>
+    
+                        </div>
+                  </li>
+                  <li class="nav-bar__lists__link dropdown">
+                     <a href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <svg class="svg-icon">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#notifications"></use>
+                       </svg>
+                     </a>
+                          <div class="dropdown-menu" aria-labelledby="notification">
+                            <a class="dropdown-menu__item" href="#">notification1</a>
+                            <a class="dropdown-menu__item" href="#">notification2</a>
+                            <a class="dropdown-menu__item" href="#">notification3</a>
+    
+                          </div>
+                    </li>
             </ul>
         </nav>
     </div>
     <div class="side-menu">
       <ul class="side-menu__lists">
-        <li class="side-menu__lists__title">Main</li>
+        <li class="side-menu__lists__title">Pagrindis</li>
         <li class="side-menu__lists__list  active">
           <a href="#">
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Dashboard
+            Skydelis
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -79,7 +127,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            UI Kit
+            UI Rinkinys
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -87,7 +135,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Typografphy
+            Tipografija
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -95,7 +143,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Components
+            Komponentai
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -103,7 +151,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Icons
+            Piktogramos
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -111,24 +159,16 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Forms
+            Formos
           </a>
         </li>
-        <li class="side-menu__lists__title">More</li>
+        <li class="side-menu__lists__title">Daugiau</li>
         <li class="side-menu__lists__list">
           <a href="#">
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Charts
-          </a>
-        </li>
-        <li class="side-menu__lists__list">
-          <a href="#">
-            <svg class="svg-icon">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
-            </svg>
-            Maps
+            Diagramos
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -136,17 +176,25 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Mail
+            Žemėlapiai
+          </a>
+        </li>
+        <li class="side-menu__lists__list">
+          <a href="#">
+            <svg class="svg-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
+            </svg>
+            Paštas
           </a>
         </li>
       </li>
-      <li class="side-menu__lists__title">Extras</li>
+      <li class="side-menu__lists__title">Priedai</li>
       <li class="side-menu__lists__list">
         <a href="#">
           <svg class="svg-icon">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
           </svg>
-          Pages
+          Puslapiai
         </a>
       </li>
     </li>
@@ -155,7 +203,7 @@
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Extras
+        Priedai
       </a>
     </li>
     </li>
@@ -164,13 +212,13 @@
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Multi Level
+        Daugiapakopis
       </a>
     </li>
       </ul>
     </div>
 
-    <div class="selection-container"> <!--  turi buti section-container -->
+    <div class="section-container"> <!--  turi buti section-container -->
       Welcome
       
 
@@ -248,19 +296,19 @@
     <div class="row">
         <div class="col-xl-4">
             <div class="boxes">
-                <h6 class="boxes__title">Yearl sales report</h6>
+                <h6 class="boxes__title">Metinė pardavimo ataskaita</h6>
                 <canvas id="myChart1"></canvas>
             </div>
         </div>
         <div class="col-xl-4">
             <div class="boxes">
-                <h6 class="boxes__title">Total revenue</h6>
+                <h6 class="boxes__title">Bendros pajamos</h6>
                 <canvas id="myChart2"></canvas>
             </div>
         </div>
         <div class="col-xl-4">
             <div class="boxes">
-                <h6 class="boxes__title">Total revenue</h6>
+                <h6 class="boxes__title">Bendros pajamos</h6>
                 <canvas id="myChart3"></canvas>
             </div>
         </div>
@@ -268,17 +316,17 @@
     <div class="row">
         <div class="col-xl-8">
             <div class="boxes">
-                <h6 class="boxes__title">Latest projects</h6>
-                <p class="boxes__subheading">Your awesome text goes here.</p>
+                <h6 class="boxes__title">Naujausi projektai</h6>
+                <p class="boxes__subheading">Jūsų nuostabus tekstas čia</p>
                 <table class="table table-borderless">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">Project Name</th>
-                      <th scope="col">Start Date</th>
-                      <th scope="col">Due Date</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Assign</th>
+                      <th scope="col">Projekto pavadinimas</th>
+                      <th scope="col">Pradžios data</th>
+                      <th scope="col">Pabaigos data</th>
+                      <th scope="col">Būsena</th>
+                      <th scope="col">Priskirta</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -439,8 +487,14 @@
     });
     </script>
 
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
+      <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
 
   </body>
 </html>

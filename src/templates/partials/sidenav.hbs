@@ -1,12 +1,12 @@
 <div class="side-menu">
   <ul class="side-menu__lists">
-    <li class="side-menu__lists__title">Main</li>
+    <li class="side-menu__lists__title">{{default.sidenav.main}}</li>
     <li class="side-menu__lists__list {{#is custom_basename 'dashboard'}} active{{/is}}">
       <a href="#">
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Dashboard
+        {{default.sidenav.dashboard}}
       </a>
     </li>
     <li class="side-menu__lists__list">
@@ -14,7 +14,7 @@
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        UI Kit
+        {{default.sidenav.ui_kit}}
       </a>
     </li>
     <li class="side-menu__lists__list">
@@ -22,7 +22,7 @@
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Typografphy
+        {{default.sidenav.typography}}
       </a>
     </li>
     <li class="side-menu__lists__list">
@@ -30,7 +30,7 @@
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Components
+        {{default.sidenav.components}}
       </a>
     </li>
     <li class="side-menu__lists__list">
@@ -38,7 +38,7 @@
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Icons
+        {{default.sidenav.icons}}
       </a>
     </li>
     <li class="side-menu__lists__list">
@@ -46,24 +46,16 @@
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Forms
+        {{default.sidenav.forms}}
       </a>
     </li>
-    <li class="side-menu__lists__title">More</li>
+    <li class="side-menu__lists__title">{{default.sidenav.more}}</li>
     <li class="side-menu__lists__list">
       <a href="#">
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Charts
-      </a>
-    </li>
-    <li class="side-menu__lists__list">
-      <a href="#">
-        <svg class="svg-icon">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
-        </svg>
-        Maps
+        {{default.sidenav.charts}}
       </a>
     </li>
     <li class="side-menu__lists__list">
@@ -71,17 +63,25 @@
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Mail
+        {{default.sidenav.maps}}
+      </a>
+    </li>
+    <li class="side-menu__lists__list">
+      <a href="#">
+        <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
+        </svg>
+        {{default.sidenav.mail}}
       </a>
     </li>
   </li>
-  <li class="side-menu__lists__title">Extras</li>
+  <li class="side-menu__lists__title">{{default.sidenav.extras}}</li>
   <li class="side-menu__lists__list">
     <a href="#">
       <svg class="svg-icon">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
       </svg>
-      Pages
+      {{default.sidenav.pages}}
     </a>
   </li>
 </li>
@@ -90,7 +90,7 @@
     <svg class="svg-icon">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
     </svg>
-    Extras
+    {{default.sidenav.extras_2}}
   </a>
 </li>
 </li>
@@ -99,7 +99,7 @@
     <svg class="svg-icon">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
     </svg>
-    Multi Level
+    {{default.sidenav.multi_level}}
   </a>
 </li>
   </ul>

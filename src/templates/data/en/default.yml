@@ -1,16 +1,18 @@
 lang: en
 sidenav:
-  main: main
+  main: Main
   dashboard: Dashboard
-  UI Kit:
-  Typografphy:
-  Components:
-  Icons:
-  Forms:
-  More:
-  Charts:
-  Maps:
-  Mail:
-  Pages:
-  Extras:
-  Multi Level:
+  ui_kit: UI Kit
+  typography: Typography
+  components: Components
+  icons: Icons
+  forms: Forms
+  more: More
+  charts: Charts
+  maps: Maps
+  mail: Mail
+  extras: Extras
+  pages: Pages
+  extras_2: Extras
+  multi_level: Multi Level
+  

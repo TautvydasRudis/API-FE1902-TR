@@ -1,5 +1,15 @@
 stats:
   visits: Today's Visits
   revenue: Total Revenue
-  sales: Total Revenue
+  sales: Today's Sales
   conversion: Conversion
+  yearly_sales_report: Yearly sales report
+  revenue_2: Total revenue
+  revenue_3: Total revenue
+  latest_projects: Latest projects
+  awesome_text: Your awesome text goes here
+  project_name: Project Name
+  start_date: Start Date
+  due_date: Due Date
+  status: Status
+  assign: Assign 

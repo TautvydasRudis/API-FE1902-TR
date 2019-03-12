@@ -9,14 +9,6 @@
   overflow: scroll;
   padding: 20px 0 80px;
   &__lists{
-    &active{
-      border-color: $default-bg;
-      background-color: $light-grey;
-      a{
-        color: red;
-        background:$light-grey;
-      }
-    }
     &__list{
       position: relative;
       padding: 12px 20px;
@@ -42,19 +34,20 @@
         &:after{
           @include arrow($rotate: -45deg);
         }
-        // &active{
-        //   border-color: $default-bg;
-        //   background-color: $light-grey;
-        //   a{
-        //     // color: red;
-        //     // background:$light-grey;
-        //   }
-        // }
-      &__title{
-        padding: 12px 20px;
-        font-size: 12px;
+        &.active{
+          border-color: $default-bg;
+          background-color: $light-grey;
+          a{
+            // color: red;
+            background:$light-grey;
+          }
+        }
       }
+    &__title{
+      padding: 12px 20px;
+      // font-size: 12px;
     }
-    list-style: none;
+    padding: 0px;
+    list-style: none
   }
 }

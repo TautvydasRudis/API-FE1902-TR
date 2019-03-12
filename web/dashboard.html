@@ -39,27 +39,75 @@
                 </li>
             </ul>
             <ul class="nav-bar__lists nav-bar__lists--right">
-                <li>
-                  <a class="nav-bar__lists__link" href="#">
-                    <svg class="svg-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use>
-                    </svg>
-                  </a>
+              <li class="nav-bar__lists__link dropdown">
+                 <a href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <svg class="svg-icon">
+                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use>
+                   </svg>
+                 </a>
+                      <div class="dropdown-menu" aria-labelledby="activities">
+                        <a class="dropdown-menu__item" href="#">
+                          <div class="circle">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop" style="fill: black"></use>
+                            </svg>
+                          </div>
+                          <div class="dropdown-menu__item__title">
+                            <h6>Robert</h6>
+                            <p data-time="">1 min</p>
+                          </div>
+                        </a>
+                        <a class="dropdown-menu__item" href="#">
+                          <div class="circle">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop" style="fill: black"></use>
+                            </svg>
+                          </div>
+                          <div class="dropdown-menu__item__title">
+                            <h6>Robert</h6>
+                            <p data-time="">1 min</p>
+                          </div>
+                        </a>
+                        <a class="dropdown-menu__item" href="#">
+                          <div class="circle">
+                            <svg class="svg-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop" style="fill: black"></use>
+                            </svg>
+                          </div>
+                          <div class="dropdown-menu__item__title">
+                            <h6>Robert</h6>
+                            <p data-time="">1 min</p>
+                          </div>
+                        </a>
+    
+                      </div>
                 </li>
-                <li>
-                  <a class="nav-bar__lists__link" href="#">
-                    <svg class="svg-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#more"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="nav-bar__lists__link" href="#">
-                    <svg class="svg-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#notifications"></use>
-                    </svg>
-                  </a>
-                </li>
+                <li class="nav-bar__lists__link dropdown">
+                   <a href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <svg class="svg-icon">
+                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#more"></use>
+                     </svg>
+                   </a>
+                        <div class="dropdown-menu" aria-labelledby="profile">
+                          <a class="dropdown-menu__item" href="#">profile1</a>
+                          <a class="dropdown-menu__item" href="#">profile2</a>
+                          <a class="dropdown-menu__item" href="#">profile3</a>
+    
+                        </div>
+                  </li>
+                  <li class="nav-bar__lists__link dropdown">
+                     <a href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <svg class="svg-icon">
+                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#notifications"></use>
+                       </svg>
+                     </a>
+                          <div class="dropdown-menu" aria-labelledby="notification">
+                            <a class="dropdown-menu__item" href="#">notification1</a>
+                            <a class="dropdown-menu__item" href="#">notification2</a>
+                            <a class="dropdown-menu__item" href="#">notification3</a>
+    
+                          </div>
+                    </li>
             </ul>
         </nav>
     </div>
@@ -87,7 +135,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Typografphy
+            Typography
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -170,7 +218,7 @@
       </ul>
     </div>
 
-    <div class="selection-container"> <!--  turi buti section-container -->
+    <div class="section-container"> <!--  turi buti section-container -->
       Welcome
       
 
@@ -222,7 +270,7 @@
                     </div>
                     <div class="col-8 v-align">
                         <h5>64,570</h5>
-                        <p>Total Revenue</p>
+                        <p>Today&#x27;s Sales</p>
                     </div>
                 </div>
             </div>
@@ -248,7 +296,7 @@
     <div class="row">
         <div class="col-xl-4">
             <div class="boxes">
-                <h6 class="boxes__title">Yearl sales report</h6>
+                <h6 class="boxes__title">Yearly sales report</h6>
                 <canvas id="myChart1"></canvas>
             </div>
         </div>
@@ -269,7 +317,7 @@
         <div class="col-xl-8">
             <div class="boxes">
                 <h6 class="boxes__title">Latest projects</h6>
-                <p class="boxes__subheading">Your awesome text goes here.</p>
+                <p class="boxes__subheading">Your awesome text goes here</p>
                 <table class="table table-borderless">
                   <thead>
                     <tr>
@@ -439,8 +487,14 @@
     });
     </script>
 
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
+      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
   </body>
 </html>

@@ -76,19 +76,19 @@ custom_basename: dashboard
     <div class="row">
         <div class="col-xl-4">
             <div class="boxes">
-                <h6 class="boxes__title">Yearl sales report</h6>
+                <h6 class="boxes__title">{{dashboard.stats.yearly_sales_report}}</h6>
                 <canvas id="myChart1"></canvas>
             </div>
         </div>
         <div class="col-xl-4">
             <div class="boxes">
-                <h6 class="boxes__title">Total revenue</h6>
+                <h6 class="boxes__title">{{dashboard.stats.revenue_2}}</h6>
                 <canvas id="myChart2"></canvas>
             </div>
         </div>
         <div class="col-xl-4">
             <div class="boxes">
-                <h6 class="boxes__title">Total revenue</h6>
+                <h6 class="boxes__title">{{dashboard.stats.revenue_3}}</h6>
                 <canvas id="myChart3"></canvas>
             </div>
         </div>
@@ -96,17 +96,17 @@ custom_basename: dashboard
     <div class="row">
         <div class="col-xl-8">
             <div class="boxes">
-                <h6 class="boxes__title">Latest projects</h6>
-                <p class="boxes__subheading">Your awesome text goes here.</p>
+                <h6 class="boxes__title">{{dashboard.stats.latest_projects}}</h6>
+                <p class="boxes__subheading">{{dashboard.stats.awesome_text}}</p>
                 <table class="table table-borderless">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">Project Name</th>
-                      <th scope="col">Start Date</th>
-                      <th scope="col">Due Date</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Assign</th>
+                      <th scope="col">{{dashboard.stats.project_name}}</th>
+                      <th scope="col">{{dashboard.stats.start_date}}</th>
+                      <th scope="col">{{dashboard.stats.due_date}}</th>
+                      <th scope="col">{{dashboard.stats.status}}</th>
+                      <th scope="col">{{dashboard.stats.assign}}</th>
                     </tr>
                   </thead>
                   <tbody>

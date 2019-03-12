@@ -1,1 +1,18 @@
 lang: lt
+sidenav:
+  main: Pagrindis
+  dashboard: Skydelis
+  ui_kit: UI Rinkinys
+  typography: Tipografija
+  components: Komponentai
+  icons: Piktogramos
+  forms: Formos
+  more: Daugiau
+  charts: Diagramos
+  maps: Žemėlapiai
+  mail: Paštas
+  extras: Priedai
+  pages: Puslapiai
+  extras_2: Priedai
+  multi_level: Daugiapakopis
+  
