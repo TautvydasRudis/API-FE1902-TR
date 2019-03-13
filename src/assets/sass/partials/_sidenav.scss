@@ -8,6 +8,11 @@
           box-shadow: $box-shadow;
   overflow: scroll;
   padding: 20px 0 80px;
+  -ms-overflow-style: none;  // IE 10+
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar{
+      display: none;
+  }
   &__lists{
     &__list{
       position: relative;
@@ -49,5 +54,21 @@
     }
     padding: 0px;
     list-style: none
+  }
+  &--closed{
+    width:70px;
+    .side-menu__lists{
+      &__list{
+        span{
+          display: none;
+        }
+        &:after{
+          display: none;
+        }
+      }
+      &__title{
+        display: none;
+      }
+    }
   }
 }

@@ -1,6 +1,9 @@
 .section-container{
   margin-top: $nav-height + 20;
   margin-left: $nav-left-width + 15;
+  &--closed{
+    margin-left: 80px;
+  }
 }
 .boxes{
   -webkit-box-shadow: $box-shadow;

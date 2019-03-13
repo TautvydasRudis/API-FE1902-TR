@@ -30,8 +30,8 @@
         </nav>
         <nav class="nav-bar nav-bar--right">
             <ul class="nav-bar__lists nav-bar__lists--left">
-                <li>
-                  <a class="nav-bar__lists__link" href="#">
+                <li class="nav-bar__lists__link">
+                  <a href="#" id="burger">
                     <svg class="svg-icon">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
                         </svg>
@@ -39,79 +39,83 @@
                 </li>
             </ul>
             <ul class="nav-bar__lists nav-bar__lists--right">
-              <li class="nav-bar__lists__link dropdown">
-                 <a href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li>
+                <a class="nav-bar__lists__link" href="#">
                    <svg class="svg-icon">
                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use>
                    </svg>
-                 </a>
-                      <div class="dropdown-menu" aria-labelledby="activities">
-                        <a class="dropdown-menu__item" href="#">
-                          <div class="circle">
-                            <svg class="svg-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop" style="fill: black"></use>
-                            </svg>
-                          </div>
-                          <div class="dropdown-menu__item__title">
-                            <h6>Robert</h6>
-                            <p data-time="">1 min</p>
-                          </div>
-                        </a>
-                        <a class="dropdown-menu__item" href="#">
-                          <div class="circle">
-                            <svg class="svg-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop" style="fill: black"></use>
-                            </svg>
-                          </div>
-                          <div class="dropdown-menu__item__title">
-                            <h6>Robert</h6>
-                            <p data-time="">1 min</p>
-                          </div>
-                        </a>
-                        <a class="dropdown-menu__item" href="#">
-                          <div class="circle">
-                            <svg class="svg-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop" style="fill: black"></use>
-                            </svg>
-                          </div>
-                          <div class="dropdown-menu__item__title">
-                            <h6>Robert</h6>
-                            <p data-time="">1 min</p>
-                          </div>
-                        </a>
-    
-                      </div>
+                </a>
                 </li>
                 <li class="nav-bar__lists__link dropdown">
-                   <a href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <a href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      <svg class="svg-icon">
                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#more"></use>
                      </svg>
                    </a>
-                        <div class="dropdown-menu" aria-labelledby="profile">
-                          <a class="dropdown-menu__item" href="#">profile1</a>
-                          <a class="dropdown-menu__item" href="#">profile2</a>
-                          <a class="dropdown-menu__item" href="#">profile3</a>
+                        <div class="dropdown-menu" aria-labelledby="activities">
+                          <a class="dropdown-menu__item" href="#">activities1</a>
+                          <a class="dropdown-menu__item" href="#">activities2</a>
+                          <a class="dropdown-menu__item" href="#">activities3</a>
     
                         </div>
                   </li>
-                  <li class="nav-bar__lists__link dropdown">
-                     <a href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       <svg class="svg-icon">
-                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#notifications"></use>
-                       </svg>
-                     </a>
-                          <div class="dropdown-menu" aria-labelledby="notification">
-                            <a class="dropdown-menu__item" href="#">notification1</a>
-                            <a class="dropdown-menu__item" href="#">notification2</a>
-                            <a class="dropdown-menu__item" href="#">notification3</a>
     
-                          </div>
-                    </li>
+                    <li class="nav-bar__lists__link dropdown">
+                       <a href="#" role="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <svg class="svg-icon">
+                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#notifications"></use>
+                         </svg>
+                       </a>
+                            <div class="dropdown-menu" aria-labelledby="notification">
+                              <a class="dropdown-menu__item" href="#">
+                                <div class="circle">
+                                  <svg class="svg-icon">
+                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#notifications" style="fill: red"></use>
+                                  </svg>
+                                </div>
+                                <div class="dropdown-menu__item__title">
+                                  <h6>Robert</h6>
+                                  <p data-time="">1 min</p>
+                                </div>
+                              </a>
+                              <a class="dropdown-menu__item" href="#">
+                                <div class="circle">
+                                  <svg class="svg-icon">
+                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#notifications" style="fill: red"></use>
+                                  </svg>
+                                </div>
+                                <div class="dropdown-menu__item__title">
+                                  <h6>Robert</h6>
+                                  <p data-time="">1 min</p>
+                                </div>
+                              </a>
+                              <a class="dropdown-menu__item" href="#">
+                                <div class="circle">
+                                  <svg class="svg-icon">
+                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#notifications" style="fill: red"></use>
+                                  </svg>
+                                </div>
+                                <div class="dropdown-menu__item__title">
+                                  <h6>Robert</h6>
+                                  <p data-time="">1 min</p>
+                                </div>
+                              </a>
+                            </div>
+                      </li>
+                      <li class="nav-bar__lists__link dropdown">
+                         <a href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <img class="boxes__image navbar__user_image" src="assets/images/obama.jpg" alt="user picture">
+                         </a>
+                              <div class="dropdown-menu" aria-labelledby="profile">
+                                <a class="dropdown-menu__item" href="#">profile1</a>
+                                <a class="dropdown-menu__item" href="#">profile2</a>
+                                <a class="dropdown-menu__item" href="#">profile3</a>
+                              </div>
+                        </li>
             </ul>
         </nav>
     </div>
-    <div class="side-menu">
+    <div id="side-menu" class="side-menu">
       <ul class="side-menu__lists">
         <li class="side-menu__lists__title">Pagrindis</li>
         <li class="side-menu__lists__list  active">
@@ -119,7 +123,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Skydelis
+            <span>Skydelis</span>
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -127,7 +131,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            UI Rinkinys
+            <span>UI Rinkinys</span>
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -135,7 +139,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Tipografija
+            <span>Tipografija</span>
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -143,7 +147,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Komponentai
+            <span>Komponentai</span>
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -151,7 +155,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Piktogramos
+            <span>Piktogramos</span>
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -159,7 +163,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Formos
+            <span>Formos</span>
           </a>
         </li>
         <li class="side-menu__lists__title">Daugiau</li>
@@ -168,7 +172,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Diagramos
+            <span>Diagramos</span>
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -176,7 +180,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Žemėlapiai
+            <span>Žemėlapiai</span>
           </a>
         </li>
         <li class="side-menu__lists__list">
@@ -184,7 +188,7 @@
             <svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
             </svg>
-            Paštas
+            <span>Paštas</span>
           </a>
         </li>
       </li>
@@ -194,7 +198,7 @@
           <svg class="svg-icon">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
           </svg>
-          Puslapiai
+          <span>Puslapiai</span>
         </a>
       </li>
     </li>
@@ -203,7 +207,7 @@
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Priedai
+        <span>Priedai</span>
       </a>
     </li>
     </li>
@@ -212,13 +216,13 @@
         <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
         </svg>
-        Daugiapakopis
+        <span>Daugiapakopis</span>
       </a>
     </li>
       </ul>
     </div>
 
-    <div class="section-container"> <!--  turi buti section-container -->
+    <div id='section-container' class="section-container">
       Welcome
       
 
@@ -420,81 +424,12 @@
     <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
 
       <script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>
-    <script type="text/javascript">
 
-    var ctx = document.getElementById('myChart1').getContext('2d');
-    var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
-
-    // The data for our dataset
-    data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [{
-            label: "My First dataset",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45],
-        }]
-    },
-
-    // Configuration options go here
-    options: {}
-    });
-    </script>
-
-    <script type="text/javascript">
-    var ctx = document.getElementById('myChart2').getContext('2d');
-    var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'bar',
-
-    // The data for our dataset
-    data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [{
-            label: "My First dataset",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45],
-        }]
-    },
-
-    // Configuration options go here
-    options: {}
-    });
-    </script>
-
-    <script type="text/javascript">
-    var ctx = document.getElementById('myChart3').getContext('2d');
-    var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'doughnut',
-
-    // The data for our dataset
-    data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [{
-            label: "My First dataset",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45],
-        }]
-    },
-
-    // Configuration options go here
-    options: {}
-    });
-    </script>
-
-    <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/chart.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
 
       <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
-
+  <script type="text/javascript" src="assets/js/app.js"></script>
   </body>
 </html>
