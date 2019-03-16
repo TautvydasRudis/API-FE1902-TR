@@ -10,10 +10,18 @@
   </ul>
 </nav> -->
 
+
 <div class="topbar">
     <nav class="nav-bar nav-bar--left">
         <ul class="nav-bar__lists">
-            <li><a class="nav-bar__lists__link" href="#">ADMIN</a></li>
+            <li>
+              <a class="nav-bar__lists__link" href="#">
+                <svg class="svg-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use>
+                </svg>
+                <span>ADMIN</span>
+              </a>
+              </li>
         </ul>
     </nav>
     <nav class="nav-bar nav-bar--right">
@@ -95,9 +103,46 @@
                        <img class="boxes__image navbar__user_image" src="assets/images/obama.jpg" alt="user picture">
                      </a>
                           <div class="dropdown-menu" aria-labelledby="profile">
-                            <a class="dropdown-menu__item" href="#">profile1</a>
-                            <a class="dropdown-menu__item" href="#">profile2</a>
-                            <a class="dropdown-menu__item" href="#">profile3</a>
+                            <a class="dropdown-menu__item" href="#">
+                              <div class="circle">
+                                <svg class="svg-icon">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#profileSvg" style="fill: #3C5A99"></use>
+                                </svg>
+                              </div>
+                              <div class="dropdown-menu__item__title">
+                                <h6>Profile</h6>
+                              </div>
+                            </a>
+                            <a class="dropdown-menu__item" href="#">
+                              <div class="circle">
+                                <svg class="svg-icon">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#settingsSvg" style="fill: #3C5A99"></use>
+                                </svg>
+                              </div>
+                              <div class="dropdown-menu__item__title">
+                                <h6>Settings</h6>
+                              </div>
+                            </a>
+                            <a class="dropdown-menu__item" href="#">
+                              <div class="circle">
+                                <svg class="svg-icon">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lockScreenSvg" style="fill: #3C5A99"></use>
+                                </svg>
+                              </div>
+                              <div class="dropdown-menu__item__title">
+                                <h6>Lock Screen</h6>
+                              </div>
+                            </a>
+                            <a class="dropdown-menu__item" href="#">
+                              <div class="circle">
+                                <svg class="svg-icon">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#notifications" style="fill: #3C5A99"></use>
+                                </svg>
+                              </div>
+                              <div class="dropdown-menu__item__title">
+                                <h6>Log out</h6>
+                              </div>
+                            </a>
                           </div>
                     </li>
         </ul>

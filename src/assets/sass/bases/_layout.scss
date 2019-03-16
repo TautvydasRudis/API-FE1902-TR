@@ -5,6 +5,18 @@
     margin-left: 80px;
   }
 }
+.section-title{
+  &__nav{
+    span{
+      &:first-of-type{
+        &:after{
+          content: ' /'
+        }
+      }
+    }
+  }
+
+}
 .boxes{
   -webkit-box-shadow: $box-shadow;
           box-shadow: $box-shadow;
@@ -44,7 +56,6 @@
 
   }
 }
-
 .user-role{
   &--user{
     color: $color-user;
@@ -57,5 +68,20 @@
   &--senpai{
     color: $color-senpai;
     font-weight: 600;
+  }
+}
+.sidenav-closed {
+  .topbar{
+    .nav-bar{
+      &--left{
+        width: $sidenav-closed-width;
+        span{
+          display: none;
+        }
+      }
+    }
+  }
+  .section-container{
+    margin-left: $sidenav-closed-width + 15;
   }
 }
