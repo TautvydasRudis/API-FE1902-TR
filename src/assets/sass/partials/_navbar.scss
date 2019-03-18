@@ -47,7 +47,7 @@
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
-            padding: 10px 20px;
+            padding: 5px 10px;
             .circle{
               @include circle($width: 40px, $height: 40px)
             }
@@ -60,7 +60,6 @@
                 color: $mid-grey;
                 line-height: 1;
               }
-
             }
           }
         }
