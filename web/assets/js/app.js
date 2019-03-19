@@ -17,4 +17,8 @@ $(function(){
   $('#basename')
   .text(basename)
   .attr('href', '/' + basename.toLowerCase() + '.html');
+
+  $('#activities').on('click', function(){
+    $('#sidenav-right').toggleClass('sidenav-right--open');
+  })
 })

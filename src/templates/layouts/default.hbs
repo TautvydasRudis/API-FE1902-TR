@@ -15,10 +15,14 @@
     {{>navbar}}
     {{>sidenav}}
 
+
+
     <div id='section-container' class="section-container">
+      {{>sidenavRight}}
       {{>title}}
       {{>body}}
     </div>
+
 
     {{#is basename 'index'}}
     {{>footer}}
