@@ -9764,6 +9764,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   margin: 0;
+  background: #ebebeb;
 }
 
 u {
@@ -9795,6 +9796,58 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: none;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+}
+
+.button {
+  display: block;
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  background: #ff8000;
+  color: #fff;
+  border: 0;
+  border-radius: 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+.button:hover {
+  background: #ff8000;
+  -webkit-filter: brightness(85%);
+  filter: brightness(85%);
+}
+.button:focus {
+  outline: none;
+}
+.button--full-width {
+  width: 100%;
+}
+
+.checkbox input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 14px;
+  margin-right: 10px;
+  position: relative;
+  top: 0;
+}
+.checkbox input:before {
+  border: 2px solid red;
+  border-radius: 2px;
+  content: "";
+  height: 14px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.checkbox input:after {
+  background: #fff;
 }
 
 .topbar {
@@ -9971,11 +10024,21 @@ select:-webkit-autofill:focus {
   border-bottom: solid 3px red;
 }
 
+.login__title {
+  margin-bottom: 40px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 .login__form__item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-.login__form__item input {
+.login__form__item input:not([type=checkbox]) {
   width: 100%;
   height: 56px;
   border: 1px solid #80898e;
@@ -9984,23 +10047,23 @@ select:-webkit-autofill:focus {
   color: #80898e;
   padding-left: 18px;
 }
-.login__form__item input:focus {
+.login__form__item input:not([type=checkbox]):focus {
   outline: none;
   border-color: #3C5A99;
   -webkit-box-shadow: 0 0 0 1px #3C5A99;
   box-shadow: 0 0 0 1px #3C5A99;
 }
-.login__form__item input:valid ~ label {
+.login__form__item input:not([type=checkbox]):valid ~ label {
   top: -8px;
   padding: 0 6px;
   font-size: 12px;
 }
-.login__form__item input:focus ~ label {
+.login__form__item input:not([type=checkbox]):focus ~ label {
   top: -8px;
   padding: 0 6px;
   font-size: 12px;
 }
-.login__form__item label {
+.login__form__item .label-inside {
   position: absolute;
   background: #fff;
   font-size: 16px;
@@ -10012,10 +10075,34 @@ select:-webkit-autofill:focus {
   transition: .2s ease all;
   pointer-events: none;
 }
+.login__form__item--checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
 .login__form__button {
-  width: 100%;
+  display: block;
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  background: #ff8000;
+  color: #fff;
+  border: 0;
   border-radius: 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  text-align: center;
 }
 .login__form__button button {
   width: 100%;
+}
+.login__form__button:hover {
+  background: #ff8000;
+  -webkit-filter: brightness(85%);
+  filter: brightness(85%);
+}
+.login__form__button:focus {
+  outline: none;
 }

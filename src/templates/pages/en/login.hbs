@@ -15,14 +15,20 @@ layout: login.hbs
           <form class="login-form" name="login-form" action="dashboard.html">
             <div class="login__form__item">
               <input type="email" name="email" value="" required="required">
-              <label for="email">Email</label>
+              <label class="label-inside" for="email">Email</label>
             </div>
             <div class="login__form__item">
               <input type="password" name="password" value="" required="required">
-              <label for="password">Password</label>
+              <label class="label-inside" for="password">Password</label>
+            </div>
+            <div class="login__form__item login__form__item--checkbox">
+              <div class="checkbox">
+                <input type="checkbox" name="remember" value="" required="required">
+                <label for="remember">Remember me</label>
+              </div>
             </div>
             <div class="login__form__item login__form__button">
-              <button type="button" name="button">Log in</button>
+              <button type="button" name="button" class="button button--full-width">Log in</button>
             </div>
           </form>
         </div>
