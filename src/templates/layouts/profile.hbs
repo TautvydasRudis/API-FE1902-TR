@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>API login</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body {{#is bg-color 'true'}}class="bg-color"{{/is}}>
+  {{>navbar}}
+  {{>sidenav}}
+
+
+  <div id='section-container' class="section-container">
+    {{>sidenavRight}}
+    {{>title}}
+    {{>body}}
+  </div>
+
+
+  {{#is basename 'index'}}
+  {{>footer}}
+  {{/is}}
+
+
+  <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div>
+
+  {{#is default.lang 'lt'}}
+    <script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+  {{else}}
+    <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
+  {{/is}}
+
+  <script type="text/javascript" src="assets/js/chart.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/popper.min.js">
+
+  </script>
+
+{{#is default.lang 'lt'}}
+    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+{{else}}
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+{{/is}}
+<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>

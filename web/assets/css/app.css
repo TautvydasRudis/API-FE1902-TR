@@ -9824,30 +9824,46 @@ select:-webkit-autofill:focus {
   width: 100%;
 }
 
-.checkbox input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  height: 14px;
-  margin-right: 10px;
+.checkbox {
   position: relative;
-  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.checkbox input:before {
-  border: 2px solid red;
-  border-radius: 2px;
+.checkbox label {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.checkbox label:before, .checkbox label:after {
   content: "";
-  height: 14px;
-  left: 0;
   position: absolute;
-  top: 0;
-  z-index: 1;
+  left: 0;
 }
-.checkbox input:after {
+.checkbox label:before {
+  width: 20px;
+  height: 20px;
   background: #fff;
+  border-radius: 2px;
+  border: 2px solid rgba(54, 64, 74, 0.2);
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.checkbox input[type="checkbox"] {
+  visibility: hidden;
+  outline: 0;
+}
+.checkbox input[type="checkbox"]:checked + label:before {
+  background: #ff8000;
+  border: 0;
+}
+.checkbox input[type="checkbox"]:checked + label:after {
+  width: 12px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-top-style: none;
+  border-right-style: none;
+  -webkit-transform: translate(4px, 5.38462px) rotate(-45deg);
+  transform: translate(4px, 5.38462px) rotate(-45deg);
 }
 
 .topbar {
@@ -10021,7 +10037,9 @@ select:-webkit-autofill:focus {
   width: 120px;
 }
 .nav-link.active {
-  border-bottom: solid 3px red;
+  border: 0;
+  border-radius: 0;
+  border-bottom: solid 2px blue;
 }
 
 .login__title {
@@ -10105,4 +10123,39 @@ select:-webkit-autofill:focus {
 }
 .login__form__button:focus {
   outline: none;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.profile__dashboard {
+  height: 500px;
+  border: 2px;
+  background: #fff;
+  margin-bottom: 24px;
+}
+.profile__skills {
+  height: 200px;
+  border: 2px;
+  background: #fff;
+}
+
+.profile-info {
+  height: 700px;
+  border: 2px;
+  background: #fff;
+}
+.profile-info__tabs .nav .active {
+  border: 0;
+  border-radius: 0;
+  border-bottom: solid 2px blue;
+}
+.profile-info__tabs .nav-link {
+  border: 0;
 }

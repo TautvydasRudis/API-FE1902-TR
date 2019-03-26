@@ -1,0 +1,38 @@
+.profile{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  &__dashboard{
+    height: 500px;
+    border: 2px;
+    background: #fff;
+    margin-bottom: 24px;
+  }
+  &__skills{
+    height: 200px;
+    border: 2px;
+    background: #fff;
+  }
+}
+
+.profile-info{
+  height: 700px;
+  border: 2px;
+  background: #fff;
+  &__tabs{
+    .nav{
+      .active{
+        border:0;
+        border-radius: 0;
+        border-bottom: solid 2px blue;
+      }
+    }
+    .nav-link{
+      border: 0;
+    }
+  }
+}
