@@ -10029,14 +10029,20 @@ select:-webkit-autofill:focus {
   background: white;
   right: 0px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 999;
+  overflow: scroll;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-
-.nav-link {
-  width: 120px;
+.sidenav-right .sidenav-right__tabs .nav-pills {
+  background-color: #fff;
+  color: 0;
+  width: 90;
 }
-.nav-link.active {
+.sidenav-right .sidenav-right__tabs .nav-pills .nav-link.active {
+  background-color: #fff;
+  color: black;
   border: 0;
   border-radius: 0;
   border-bottom: solid 2px blue;
@@ -10135,19 +10141,35 @@ select:-webkit-autofill:focus {
   flex-direction: column;
 }
 .profile__dashboard {
-  height: 500px;
+  height: auto;
   border: 2px;
   background: #fff;
-  margin-bottom: 24px;
 }
-.profile__skills {
-  height: 200px;
+.profile__dashboard__top__list {
+  list-style: none;
+}
+.profile__dashboard__center__list {
+  list-style: none;
+}
+.profile__dashboard__center__list__item span {
+  font-weight: bold;
+}
+.profile__skills__list {
+  list-style: none;
+  height: auto;
   border: 2px;
   background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .profile-info {
-  height: 700px;
+  height: auto;
   border: 2px;
   background: #fff;
 }

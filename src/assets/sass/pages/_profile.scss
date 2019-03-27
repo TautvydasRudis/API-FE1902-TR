@@ -7,20 +7,43 @@
       -ms-flex-direction: column;
           flex-direction: column;
   &__dashboard{
-    height: 500px;
+    height: auto;
     border: 2px;
     background: #fff;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
+    &__top{
+      &__list{
+        list-style: none;
+      }
+    }
+    &__center{
+      &__list{
+        list-style: none;
+        &__item{
+          span{
+            font-weight: bold;
+          }
+        }
+      }
+    }
   }
-  &__skills{
-    height: 200px;
+  &__skills__list{
+    list-style: none;
+    height: auto;
     border: 2px;
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .profile-info{
-  height: 700px;
+  height: auto;
   border: 2px;
   background: #fff;
   &__tabs{

@@ -1,5 +1,7 @@
 .sidenav-right{
   display: none;
+
+  // right: -$nav-right-width;
   &__container{
     &__title{
       list-style: none;
@@ -8,7 +10,6 @@
       display: flex;
     }
   }
-
   &--open{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -18,16 +19,24 @@
     background: white;
     right: 0px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 999;
+    overflow: scroll;
+    -webkit-transition: $transition;
+    transition: $transition;
   }
-}
-
-.nav-link{
-  &.active{
-    border:0;
-    border-radius: 0;
-    border-bottom: solid 2px blue;
+  .sidenav-right__tabs{
+    .nav-pills{
+      background-color: #fff;
+      color: 0;
+      width: 90;
+      .nav-link.active{
+        background-color: #fff;
+        color: black;
+        border: 0;
+        border-radius: 0;
+        border-bottom: solid 2px blue;
+      }
+    }
   }
-  width: 120px;
 }
