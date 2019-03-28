@@ -1,15 +1,7 @@
 .sidenav-right{
-  display: none;
-
-  // right: -$nav-right-width;
-  &__container{
-    &__title{
-      list-style: none;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-    }
-  }
+  width: $nav-right-width;
+  position: fixed;
+  right: -250px;
   &--open{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -29,7 +21,6 @@
     .nav-pills{
       background-color: #fff;
       color: 0;
-      width: 90;
       .nav-link.active{
         background-color: #fff;
         color: black;
@@ -38,5 +29,42 @@
         border-bottom: solid 2px blue;
       }
     }
+  }
+  &__tab-activity{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-left: 4px solid #222;
+    &__content{
+      padding-left: 20px;
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: -10px;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        border: 2px solid #222;
+        border-radius: 50%;
+      }
+
+      p{
+
+      }
+      h5{
+
+      }
+      h6{
+
+      }
+
+    }
+
+
+  }
+  &__tab-settings{
+
   }
 }
