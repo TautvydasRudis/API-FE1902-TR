@@ -22,3 +22,7 @@ $(function(){
     $('#sidenav-right').toggleClass('sidenav-right--open');
   })
 })
+
+$(function(){
+
+})

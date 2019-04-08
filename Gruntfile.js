@@ -65,6 +65,7 @@ module.exports = function(grunt) {
             '../../../../web/assets/images/ic_fb_24px.svg',
             '../../../../web/assets/images/ic_skype_24px.svg',
             '../../../../web/assets/images/ic_twitter_24px.svg',
+            '../../../../web/assets/images/ic_logo_24px.svg',
 
         ],
         dest: 'src/sprites',

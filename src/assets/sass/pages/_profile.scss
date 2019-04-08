@@ -34,14 +34,22 @@
           span{
             font-weight: bold;
           }
-        }
-        li{
-          padding: 10px 0px 0px;
+          li{
+            padding: 10px 0px 0px;
+          }
         }
       }
+    }
       &__bottom{
-        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding-bottom: 10px;
+        svg{
+          margin-right: 6px;
       }
     }
   }
